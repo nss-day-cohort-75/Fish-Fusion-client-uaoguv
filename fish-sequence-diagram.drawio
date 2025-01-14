@@ -1,0 +1,102 @@
+<mxfile host="65bd71144e">
+    <diagram id="kx94xnnVDxrLB1qEOXhi" name="Page-1">
+        <mxGraphModel dx="913" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="restaurants.js" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="495" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="main.js" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="730" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="fishMonger.js" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="275" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="fishingBoat.js" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kh3x4NsYM88FwzxjbkFt-5" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="kh3x4NsYM88FwzxjbkFt-10" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330" y="610" as="sourcePoint"/>
+                        <mxPoint x="450" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kh3x4NsYM88FwzxjbkFt-6" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;" edge="1" parent="1" source="GldxpuCWrGAufhGPYjKz-11">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="340" as="sourcePoint"/>
+                        <mxPoint x="560" y="1100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kh3x4NsYM88FwzxjbkFt-7" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="GldxpuCWrGAufhGPYjKz-5" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="70" y="1020" as="sourcePoint"/>
+                        <mxPoint x="450" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kh3x4NsYM88FwzxjbkFt-8" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;" edge="1" parent="1" source="GldxpuCWrGAufhGPYjKz-16">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="340" as="sourcePoint"/>
+                        <mxPoint x="790" y="1100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kh3x4NsYM88FwzxjbkFt-11" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="kh3x4NsYM88FwzxjbkFt-10">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="330" y="1100" as="sourcePoint"/>
+                        <mxPoint x="330" y="70" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="kh3x4NsYM88FwzxjbkFt-10" value="Data for boatInventory declared&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="220" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-8" value="Utilize filter method to&amp;nbsp; whittle down mongerInventory for species that are $7.50 or less per fish and minimum quantity of 10" style="rounded=0;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="300" width="190" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-6" value="Importing boatInventory to fishMonger module to see fresh catch of the day; invoking boatInventory inside fishMonger module which then becomes mongerInventory" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="150" width="330" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-9" value="New array that filters mongerInventory for chef requirements of species that cost $5.00 or less" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="235" y="420" width="210" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-12" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="GldxpuCWrGAufhGPYjKz-11">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="560" y="70" as="sourcePoint"/>
+                        <mxPoint x="560" y="970" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-10" value="Importing functions from fishMonger to show what fish are available for the restaurant" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="510" width="330" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-11" value="fishMenu function declared that filters available inventory on chefPrice (max price chef is willing to pay) for the day and generates HTML string format for the relevant fish species&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="445" y="590" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-19" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="GldxpuCWrGAufhGPYjKz-5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="59.71428571428578" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-5" value="Function: boatInventory (stores today's catch data)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry y="80" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-13" value="adjustedInventory array adjusts the fishMonger array by reducing purchased fished inventory by 50%" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="690" width="380" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-14" value="HTML String spits out three meals per each fish purchased: Soup, Sandwich and Grilled" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="465" y="750" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="kh3x4NsYM88FwzxjbkFt-16" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="GldxpuCWrGAufhGPYjKz-16">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="790" y="60" as="sourcePoint"/>
+                        <mxPoint x="790" y="1090" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-15" value="Invoke fishMenu function by using variable menu which cycles through the specific price the chef is willing to pay on any given day" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="455" y="850" width="375" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="GldxpuCWrGAufhGPYjKz-16" value="Log the menu to the console" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="690" y="960" width="200" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

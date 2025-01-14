@@ -1,5 +1,5 @@
 
-const boatInventory = // inventory of fish caught by boat
+const totalInventory = // inventory of fish caught by boat
     [
         { id: 1, species: "Halibut", weight: 6, price: 3.55, amount: 30 },
         { id: 2, species: "Mackerel", weight: 3, price: 4.10, amount: 48 },
@@ -11,8 +11,10 @@ const boatInventory = // inventory of fish caught by boat
         { id: 8, species: "Puffer", weight: 2, price: 9.84, amount: 52 }
     ]
 
+    const boatInventory = () => {
+        return totalInventory
+    }
+
     module.exports = {
         boatInventory
     }
-    
-// module.exports = {}

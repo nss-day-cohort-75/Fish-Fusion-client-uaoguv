@@ -1,12 +1,19 @@
-const { boatInventory } = require("./fishingBoat.js")
-const { mongerInventory, adjustedMenu } = require("./fishMonger.js")
+const { chefPrice, inventoryForPurchase } = require("./fishMonger.js")
 
-const fishMenu = (chefPriceRange) => { //filters down and returns a array of fish with price less than chefPrice
-    const mongerInv = mongerInventory(7.50, 10, boatInventory)
-    return mongerInv.filter(fish => fish.price <= chefPriceRange)
-}
 
-const menuMaker = (menuInv) => {  //Creates a HTML document for the menu using the information from the array provided
+const adjustedInventory = (price) => { //updates the inventoryForPurchase without the fish the chef purchased
+    chefPrice(price).filter(fish => {
+        inventoryForPurchase.filter(object => {
+            if (object.species === fish.species){
+                object.amount /= 2}
+            })
+        })
+        return inventoryForPurchase
+    }
+    
+
+const fishMenu = (price) => {  //Creates a HTML document for the menu using the information from the array provided
+    menuInv = chefPrice(price)
     let headerHTML = "<h1>Menu</h1>"
     const returnvalue = menuInv.map(meal => {
     
@@ -15,16 +22,14 @@ const menuMaker = (menuInv) => {  //Creates a HTML document for the menu using t
         
      return htmlDOC
     }).join('')
-    return headerHTML += '\n<article class="menu">\n' + returnvalue  + '\n</article>'
 
+
+   
+    console.log(headerHTML += '\n<article class="menu">\n' + returnvalue  + '\n</article>')
+    console.log("\nAdjusted Inventory")
+    console.log("---------------------")
+    return adjustedInventory(price)
     }
     
-    module.exports = { fishMenu, menuMaker}
+    module.exports = { fishMenu, adjustedInventory }
 
-/* <h1>Menu</h1>
-<article class="menu">
-    <h2>Tuna</h2>
-    <section class="menu__item">Tuna Soup</section>
-    <section class="menu__item">Tuna Sandwich</section>
-    <section class="menu__item">Grilled Tuna</section>
-</article> */
